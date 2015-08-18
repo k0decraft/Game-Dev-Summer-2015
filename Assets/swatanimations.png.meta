@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: f79836560a1de4f5e87cba4a74510320
+timeCreated: 1438715177
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: swatanimations_0
+    21300002: swatanimations_1
+    21300004: swatanimations_2
+    21300006: swatanimations_3
+    21300008: swatanimations_4
+    21300010: swatanimations_5
+    21300012: swatanimations_6
+    21300014: swatanimations_7
+    21300016: swatanimations_8
+    21300018: swatanimations_9
+    21300020: swatanimations_10
+    21300022: swatanimations_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: swatanimations_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 52
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 224
+        width: 52
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 224
+        width: 52
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 52
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 144
+        width: 52
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 144
+        width: 52
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 73
+        width: 51
+        height: 65
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_7
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 72
+        width: 51
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_8
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 72
+        width: 50
+        height: 65
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 49
+        height: 65
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 50
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swatanimations_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 50
+        height: 65
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
