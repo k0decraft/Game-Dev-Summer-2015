@@ -2,12 +2,14 @@
 
 var moveSpeed:float = 10;
 var maxSpeed:float = 50;
+var fireRate:float = 0.5;
 var bulletSpawn:GameObject;
 var bullet:GameObject;
 var girlSprite:GameObject;
 var aimer:GameObject;
 
 private var rb:Rigidbody;
+private var nextFire:float = 0.0;
 
 function Start () {
 	rb = GetComponent(Rigidbody);
@@ -44,7 +46,8 @@ function FixedUpdate () {
 
 
 	// shooting
-	if (Input.GetButtonDown("Fire1")) {
-		Instantiate(bullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
+	if (Input.GetButton("Fire1") && Time.time > nextFire) {
+		nextFire = Time.time + fireRate;
+		var clone = Instantiate(bullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
 	}
 }
