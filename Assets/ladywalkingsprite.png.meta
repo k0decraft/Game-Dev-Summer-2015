@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 3f33df75be4b14abd94ddfad317a7f32
+timeCreated: 1439922093
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ladywalkingsprite_0
+    21300002: ladywalkingsprite_1
+    21300004: ladywalkingsprite_2
+    21300006: ladywalkingsprite_3
+    21300008: ladywalkingsprite_4
+    21300010: ladywalkingsprite_5
+    21300012: ladywalkingsprite_6
+    21300014: ladywalkingsprite_7
+    21300016: ladywalkingsprite_8
+    21300018: ladywalkingsprite_9
+    21300020: ladywalkingsprite_10
+    21300022: ladywalkingsprite_11
+    21300024: ladywalkingsprite_12
+    21300026: ladywalkingsprite_13
+    21300028: ladywalkingsprite_14
+    21300030: ladywalkingsprite_15
+    21300032: ladywalkingsprite_16
+    21300034: ladywalkingsprite_17
+    21300036: ladywalkingsprite_18
+    21300038: ladywalkingsprite_19
+    21300040: ladywalkingsprite_20
+    21300042: ladywalkingsprite_21
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ladywalkingsprite_0
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4258
+        width: 786
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 3159
+        width: 395
+        height: 927
+      alignment: 9
+      pivot: {x: .481926471, y: .392182797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_2
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 3152
+        width: 396
+        height: 934
+      alignment: 9
+      pivot: {x: .5, y: .385347754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_3
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 3164
+        width: 434
+        height: 920
+      alignment: 9
+      pivot: {x: .467101216, y: .391362727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_4
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 3159
+        width: 516
+        height: 930
+      alignment: 9
+      pivot: {x: .375482142, y: .407883644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_5
+      rect:
+        serializedVersion: 2
+        x: 2967
+        y: 3152
+        width: 511
+        height: 919
+      alignment: 9
+      pivot: {x: .374263763, y: .406781048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_6
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 3164
+        width: 452
+        height: 920
+      alignment: 9
+      pivot: {x: .452617288, y: .391362727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_7
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 2199
+        width: 488
+        height: 842
+      alignment: 9
+      pivot: {x: .372373939, y: .416674972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_8
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 2192
+        width: 548
+        height: 843
+      alignment: 9
+      pivot: {x: .358499348, y: .45094192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_9
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2177
+        width: 554
+        height: 851
+      alignment: 9
+      pivot: {x: .360031843, y: .457477659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_10
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 2199
+        width: 591
+        height: 842
+      alignment: 9
+      pivot: {x: .325059831, y: .457023412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_11
+      rect:
+        serializedVersion: 2
+        x: 3111
+        y: 2192
+        width: 573
+        height: 843
+      alignment: 9
+      pivot: {x: .346629411, y: .45094192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_12
+      rect:
+        serializedVersion: 2
+        x: 3917
+        y: 2177
+        width: 536
+        height: 851
+      alignment: 9
+      pivot: {x: .355331182, y: .451403111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_13
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 2177
+        width: 499
+        height: 851
+      alignment: 9
+      pivot: {x: .375683993, y: .451402813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 762
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_15
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1085
+        width: 788
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_16
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 1128
+        width: 735
+        height: 824
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_17
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 1113
+        width: 740
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 6
+        width: 717
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_19
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 21
+        width: 720
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_20
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 0
+        width: 722
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladywalkingsprite_21
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 0
+        width: 730
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

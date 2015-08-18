@@ -5,7 +5,6 @@ var maxSpeed:float = 50;
 var fireRate:float = 0.5;
 var bulletSpawn:GameObject;
 var bullet:GameObject;
-var girlSprite:GameObject;
 var aimer:GameObject;
 
 private var rb:Rigidbody;
@@ -44,10 +43,12 @@ function FixedUpdate () {
 	aim = Camera.main.ScreenToWorldPoint(aim);
 	aimer.transform.LookAt(aim);
 
+	Debug.Log(aimer.transform.rotation.y);
+
 
 	// shooting
 	if (Input.GetButton("Fire1") && Time.time > nextFire) {
 		nextFire = Time.time + fireRate;
-		var clone = Instantiate(bullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
+		var bulletClone = Instantiate(bullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
 	}
 }

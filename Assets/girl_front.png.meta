@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0c7d408fe10c0420e848289503d09f9c
-timeCreated: 1439314135
+timeCreated: 1439920593
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -59,8 +59,8 @@ TextureImporter:
         y: 75
         width: 1114
         height: 1786
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .356515437, y: .429680824}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: girl_front_1
       rect:
@@ -69,8 +69,8 @@ TextureImporter:
         y: 71
         width: 1114
         height: 1792
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .658857763, y: .433101922}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: girl_front_2
       rect:
@@ -79,8 +79,8 @@ TextureImporter:
         y: 91
         width: 1114
         height: 1783
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .351390898, y: .426360786}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
