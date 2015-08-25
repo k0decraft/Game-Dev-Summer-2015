@@ -35,7 +35,9 @@ function FixedUpdate () {
 		Vector3.Normalize(movementVector);
 		movementVector *= moveSpeed;
 		rb.velocity = movementVector;
-		// rb.AddForce(movementVector);
+		// if (movementVector.magnitude < 5) {
+		// 	rb.AddForce(movementVector);
+		// }
 	}
 
 
