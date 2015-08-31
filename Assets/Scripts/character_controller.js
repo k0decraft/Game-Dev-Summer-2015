@@ -17,7 +17,7 @@ function Start () {
 
 	animator = sprite.GetComponent(Animator);
 	
-	Debug.Log(Input.GetJoystickNames());
+	// Debug.Log(Input.GetJoystickNames());
 }
 
 function FixedUpdate () {
@@ -45,17 +45,19 @@ function FixedUpdate () {
 	// face mouse
 	var aim:Vector3 = Input.mousePosition;
 	
-	aim.z = Mathf.Abs(Camera.main.transform.position.y - transform.position.y);
+	aim.z = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
 	aim = Camera.main.ScreenToWorldPoint(aim);
+	aim.y = 0.5;
 	aimer.transform.LookAt(aim);
 
-	Debug.Log(aimer.transform.eulerAngles.y);
+	// Debug.Log(aimer.transform.eulerAngles.y);
 
 	animator.SetFloat("aimDirection", aimer.transform.eulerAngles.y);
 
 
 	// shooting
 	if (Input.GetButton("Fire1") && Time.time > nextFire) {
+		Debug.Log("Shot attmepted");
 		nextFire = Time.time + fireRate;
 		var bulletClone = Instantiate(bullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
 	}
