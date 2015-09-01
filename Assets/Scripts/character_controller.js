@@ -40,6 +40,8 @@ function FixedUpdate () {
 		// }
 	}
 
+	animator.SetFloat("moveVel", rb.velocity.magnitude);
+
 
 
 	// face mouse
