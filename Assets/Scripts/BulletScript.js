@@ -2,9 +2,10 @@
 
 private var rb:Rigidbody;
 private var collisionTime:float;
+private var 
 
 public var speed:float = 2300;
-public var destroyTime:float = 0.5;
+public var destroyTime:float = 0.01;
 
 
 function Start () {
@@ -20,6 +21,7 @@ function Update () {
 	// rb.velocity = transform.forward * speed;
 	// rb.AddForce(transform.forward * speed);
 	if (Time.time >= collisionTime + destroyTime) {
+		Debug.Log("bullet destroy");
 		Destroy(gameObject);
 	}
 }
@@ -35,6 +37,6 @@ function OnCollisionEnter(collision: Collision) {
 	// }
 	// if (collision.relativeVelocity.magnitude > 2)
 	// 	audio.Play();
+	Debug.Log("bullet collide");
 	collisionTime = Time.time;
-
 }
