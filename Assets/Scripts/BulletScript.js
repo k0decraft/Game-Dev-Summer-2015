@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 private var rb:Rigidbody;
-private var collisionTime:float;
+private var collisionTime:float = Time.time + 5000;
 
 public var speed:float = 2300;
 public var destroyTime:float = 0.01;
