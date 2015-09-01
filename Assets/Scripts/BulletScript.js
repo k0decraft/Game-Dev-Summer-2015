@@ -2,7 +2,6 @@
 
 private var rb:Rigidbody;
 private var collisionTime:float;
-private var 
 
 public var speed:float = 2300;
 public var destroyTime:float = 0.01;
