@@ -6,6 +6,8 @@ public var pauseAtPatrolPointTime:float = 0.5f;
 public var pauseAfterLosingSightOfPlayerTime:float = 1f;
 public var character:GameObject;
 public var visibilityRadius:float = 4.0f;
+public var sprite:GameObject;
+public var health:int = 4;
 
 private var patrolPointsArray:Array = new Array();
 
@@ -17,8 +19,15 @@ private var confused:boolean = false;
 // when we detect that the player has escaped, we can switch to confused mode for a moment.
 private var chasing:boolean = false;
 
+private var rb:Rigidbody;
+private var animator:Animator;
+
 
 function Start () {
+
+	rb = GetComponent(Rigidbody);
+
+	animator = sprite.GetComponent(Animator);
 	
 	if (!character) {
 		Debug.LogWarning("Enemies need a reference to the character, or they won't chase her.");
@@ -30,6 +39,10 @@ function Start () {
 }
 
 function Update () {
+
+	if (health <= 0) {
+		Destroy(gameObject);
+	}
 
 	var movingToward:GameObject;
 	
@@ -48,12 +61,24 @@ function Update () {
 		// move to patrol point
 		movingToward = patrolPointsArray[0] as GameObject;
 	}
+
+	// create 360deg number to pass to animator
+	var moveDir:float = Mathf.Rad2Deg*Mathf.Atan((movingToward.transform.position.x - transform.position.x)/(movingToward.transform.position.z - transform.position.z));
+	if ((movingToward.transform.position.z - transform.position.z) < 0) {
+		moveDir +=180;
+	} else
+	if ((movingToward.transform.position.x - transform.position.x) < 0) {
+		moveDir +=360;
+	}
+	animator.SetFloat("MoveDirection", moveDir);
 		
 	// The step size is equal to speed times frame time.
 	var step = speed * Time.deltaTime;
 		
 	// Move our position a step closer to the target.
 	transform.position = Vector3.MoveTowards(transform.position, movingToward.transform.position, step);
+
+	
 }
 
 
@@ -74,6 +99,10 @@ function OnTriggerEnter (other : Collider) {
 		// enemy has hit their next patrol point, time to change it and move back toward the next one
 		patrolPointsArray.Push(patrolPointsArray.Shift());
 		pauseAtPatrolPoint();
+	}
+
+	if (other.gameObject.tag == "Bullet") {
+		health--;
 	}
 }
 

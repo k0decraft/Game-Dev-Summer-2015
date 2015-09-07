@@ -20,7 +20,6 @@ function Update () {
 	// rb.velocity = transform.forward * speed;
 	// rb.AddForce(transform.forward * speed);
 	if (Time.time >= collisionTime + destroyTime) {
-		Debug.Log("bullet destroy");
 		Destroy(gameObject);
 	}
 }
@@ -36,6 +35,5 @@ function OnCollisionEnter(collision: Collision) {
 	// }
 	// if (collision.relativeVelocity.magnitude > 2)
 	// 	audio.Play();
-	Debug.Log("bullet collide");
 	collisionTime = Time.time;
 }

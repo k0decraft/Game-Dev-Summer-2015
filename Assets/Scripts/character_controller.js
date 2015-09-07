@@ -3,10 +3,12 @@
 var moveSpeed:float = 10;
 var maxSpeed:float = 50;
 var fireRate:float = 0.5;
+var health:int = 4;
 var bulletSpawn:GameObject;
 var bullet:GameObject;
 var aimer:GameObject;
 var sprite:GameObject;
+var spawn:GameObject;
 
 private var rb:Rigidbody;
 private var animator:Animator;
@@ -63,4 +65,21 @@ function FixedUpdate () {
 		nextFire = Time.time + fireRate;
 		var bulletClone = Instantiate(bullet, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
 	}
+
+	if (health <= 0) {
+		respawn();
+	}
+}
+
+function OnTriggerEnter(other:Collider) {
+	if (other.gameObject.tag == "Enemy") {
+		health = health - 1;
+	}
+}
+
+function respawn() {
+	transform.position = spawn.transform.position;
+	rb.velocity.x = 0;
+	rb.velocity.y = 0;
+	health = 4;
 }
