@@ -40,10 +40,25 @@ function Start () {
 
 
 function drawViewArea() {
-	Debug.DrawRay (transform.position, Vector3.left * visibilityRadius, Color.green);
-	Debug.DrawRay (transform.position, Vector3.right * visibilityRadius, Color.green);
-	Debug.DrawRay (transform.position, Vector3.forward * visibilityRadius, Color.green);
-	Debug.DrawRay (transform.position, Vector3.back * visibilityRadius, Color.green);
+	Debug.DrawRay (transform.position, Vector3.left * visibilityRadius, Color.yellow);
+	Debug.DrawRay (transform.position, Vector3.right * visibilityRadius, Color.yellow);
+	Debug.DrawRay (transform.position, Vector3.forward * visibilityRadius, Color.yellow);
+	Debug.DrawRay (transform.position, Vector3.back * visibilityRadius, Color.yellow);
+}
+
+
+function drawPath() {
+	var j = 1;
+	for (var i = 0; i < patrolPoints.length; ) {
+		var a:GameObject = patrolPointsArray[i];
+		var b:GameObject = patrolPointsArray[j];
+		Debug.DrawRay(a.transform.position, b.transform.position - a.transform.position, Color.cyan);
+		i++;
+		j++;
+		if (j == patrolPointsArray.length) {
+			j = 0;
+		}
+	}
 }
 
 
@@ -54,6 +69,7 @@ function Update () {
 	}
 	
 	drawViewArea();
+	drawPath();
 
 	var movingToward:GameObject;
 	
@@ -88,6 +104,11 @@ function Update () {
 		
 	// Move our position a step closer to the target.
 	transform.position = Vector3.MoveTowards(transform.position, movingToward.transform.position, step);
+	
+	var color = Color.green;
+	if (chasing) color = Color.red;
+	// draw a line toward moveToward
+	Debug.DrawRay(transform.position, movingToward.transform.position - transform.position, color);
 
 	
 }

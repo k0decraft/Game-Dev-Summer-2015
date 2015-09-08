@@ -1,10 +1,10 @@
 ﻿#pragma strict
 
 private var rb:Rigidbody;
-private var collisionTime:float = Time.time + 5000;
+//private var collisionTime:float = Time.time + 5000;
 
 public var speed:float = 2300;
-public var destroyTime:float = 0.01;
+public var destroyTime:float = 1;
 
 
 function Start () {
@@ -19,14 +19,18 @@ function Start () {
 function Update () {
 	// rb.velocity = transform.forward * speed;
 	// rb.AddForce(transform.forward * speed);
-	if (Time.time >= collisionTime + destroyTime) {
-		Destroy(gameObject);
-	}
+//	if (Time.time >= collisionTime + destroyTime) {
+//		Debug.Log("TTL destroy!");
+//		Destroy(gameObject);
+//	}
+
+	Destroy(gameObject, destroyTime);
 }
 
 function OnBecameInvisible() {  
 	// Destroy the bullet 
-	Destroy(gameObject);
+	//Debug.Log("OnBecameInvisible destroy!");
+	//Destroy(gameObject);
 }
 
 function OnCollisionEnter(collision: Collision) {
@@ -35,5 +39,5 @@ function OnCollisionEnter(collision: Collision) {
 	// }
 	// if (collision.relativeVelocity.magnitude > 2)
 	// 	audio.Play();
-	collisionTime = Time.time;
+//	collisionTime = Time.time;
 }
