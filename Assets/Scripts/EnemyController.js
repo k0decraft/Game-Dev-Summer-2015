@@ -38,11 +38,22 @@ function Start () {
 	}
 }
 
+
+function drawViewArea() {
+	Debug.DrawRay (transform.position, Vector3.left * visibilityRadius, Color.green);
+	Debug.DrawRay (transform.position, Vector3.right * visibilityRadius, Color.green);
+	Debug.DrawRay (transform.position, Vector3.forward * visibilityRadius, Color.green);
+	Debug.DrawRay (transform.position, Vector3.back * visibilityRadius, Color.green);
+}
+
+
 function Update () {
 
 	if (health <= 0) {
 		Destroy(gameObject);
 	}
+	
+	drawViewArea();
 
 	var movingToward:GameObject;
 	
@@ -93,8 +104,9 @@ function playerIsWithinSightRadius() {
 }
 
 
-//function OnCollisionEnter(collision: Collision) {
+//function OnCollisionEnter(other: Collision) {
 function OnTriggerEnter (other : Collider) {
+	
 	if (other.gameObject == patrolPointsArray[0]) {
 		// enemy has hit their next patrol point, time to change it and move back toward the next one
 		patrolPointsArray.Push(patrolPointsArray.Shift());

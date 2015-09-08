@@ -3,7 +3,7 @@
 var moveSpeed:float = 10;
 var maxSpeed:float = 50;
 var fireRate:float = 0.5;
-var health:int = 4;
+var health:float = 4f;
 var bulletSpawn:GameObject;
 var bullet:GameObject;
 var aimer:GameObject;
@@ -43,8 +43,8 @@ function FixedUpdate () {
 	}
 
 	animator.SetFloat("moveVel", rb.velocity.magnitude);
-
-
+	
+	
 
 	// face mouse
 	var aim:Vector3 = Input.mousePosition;
@@ -71,11 +71,13 @@ function FixedUpdate () {
 	}
 }
 
-function OnTriggerEnter(other:Collider) {
+//function OnCollisionEnter(other:Collision) {
+function OnCollisionStay(other : Collision) {
 	if (other.gameObject.tag == "Enemy") {
-		health = health - 1;
+		health = health -= 0.1;
 	}
 }
+
 
 function respawn() {
 	transform.position = spawn.transform.position;
