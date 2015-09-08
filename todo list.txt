@@ -1,0 +1,3 @@
+make bullets bigger
+make hitpoints useful
+level changes
